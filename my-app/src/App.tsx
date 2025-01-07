@@ -1,10 +1,13 @@
 import './App.css'
+import Header from './Header.tsx'
+import Entry from './entry.tsx'
 
 function App() {
 
   return (
     <>
-      <h1>Vite + React test</h1>
+    <Header />
+     <Entry />
     </>
   )
 }
