@@ -10,7 +10,6 @@ function App() {
       <Entry
         key={entry.id}
         entry={entry}
-        // or {...entry}
 
         // img={entry.img}
         // title={entry.title}
@@ -18,7 +17,7 @@ function App() {
         // map={entry.googleMapsLink}
         // date={entry.dates}
         // description={entry.text}
-        
+
       />
     )
   })
