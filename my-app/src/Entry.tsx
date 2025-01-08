@@ -1,5 +1,8 @@
 type EntryProps = {
-    img: string;
+    img: {
+        src: string
+        alt: string
+    }
     country: string;
     map: string;
     title: string;
@@ -7,12 +10,11 @@ type EntryProps = {
     description: string;
 }
 
-
 export default function Entry(props: EntryProps) {
     return (
         <article className="journal-entry">
             <div className="main-image-container">
-                <img className="main-image" src={props.img} alt="mount fuji" />
+                <img className="main-image" src={props.img.src} alt={props.img.alt} />
             </div>
             <div className="info-container">
                 <img className="marker" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRINfICFcdbosHp2VzHHDsPEXsoYI1cSYgxbZDyXnHDxEwzlyFW7djzh4eTskyJy-4uGTY&usqp=CAU" alt ="marker" />
